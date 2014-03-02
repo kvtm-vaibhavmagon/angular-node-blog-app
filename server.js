@@ -8,12 +8,9 @@ var http = require('http');
 var redis = require('redis');
 
 
-var client = redis.createClient();
+
 var app = express();
 
-client.on("error", function (err) {
-    console.log("Error " + err);
-});
 
 
 var mysql = require('mysql');

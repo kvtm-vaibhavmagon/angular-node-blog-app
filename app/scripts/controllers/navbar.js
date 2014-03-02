@@ -12,16 +12,6 @@ angular.module('kadminApp')
     'title': 'Dashboard : Check all running jobs',
     'name': 'Dashboard',
     'link': '/#/poem'
-    },
-    {
-    'title': 'The place to chat!',
-    'name': 'Chat Room',
-    'link': '/#/orgTable'
-    },
-    {
-      'title': 'Run Job : Wizard for submitting job',
-      'name': 'Run Job ',
-      'link': '/#/runJob'
     }];
 
     $scope.isActive = function(route) {
