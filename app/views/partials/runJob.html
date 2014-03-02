@@ -1,0 +1,105 @@
+<div ng-controller="RunJobCtrl">
+    <div class="container-fluid">
+        <div class="wizard">
+            <div class="col-md-12">
+                <div class="col-md-1"></div>
+                <ul class="col-lg-10 wizard-steps">
+                    <li ng-repeat="step in wizard.steps" data-target="#step{{$index+1}}" class="{{step.activeClass}}">
+                        <div class="row">
+                            <div class="step step-line {{step.lineClass1}}"></div>
+                            <div class="step step-circle">{{$index+1}}</div>
+                            <div class="step step-line {{step.lineClass2}}"></div>
+                        </div>
+                        <div class="row title" data-ng-init="wizard.wizardResize()">{{step.name}}</div>
+                     </li>
+                    <!--<li data-target="#step1" class="active">
+                        <div class="row">
+                            <div class="step step-line-end step-line"></div>
+                            <div class="step step-circle">1</div>
+                            <div class="step step-line step-line-middle"></div>
+                        </div>
+                        <div class="row title">Select Domain</div>
+                    </li>
+                    <li data-target="#step2" class=" ">
+                        <div class="row">
+                            <div class="step step-line step-line-middle"></div>
+                            <div class="step step-circle">2</div>
+                            <div class="step step-line step-line-middle"></div>
+                        </div>
+                        <div class="row title">Select Data Set</div>
+                    </li>
+                    <li data-target="#step3" class=" ">
+                        <div class="row">
+                            <div class="step step-line step-line-middle"></div>
+                            <div class="step step-circle">3</div>
+                            <div class="step step-line step-line-middle"></div>
+                        </div>
+                        <div class="row title">Select Model</div>
+                    </li>
+                    <li data-target="#step4" class=" ">
+                        <div class="row">
+                            <div class="step step-line step-line-middle"></div>
+                            <div class="step step-circle">4</div>
+                            <div class="step step-line step-line-middle"></div>
+                        </div>
+                        <div class="row title">Initialize Variables</div>
+                    </li>
+                    <li data-target="#step5" class="">
+                        <div class="row">
+                            <div class="step step-line step-line-middle"></div>
+                            <div class="step step-circle">5</div>
+                            <div class="step step-line step-line-end"></div>
+                        </div>
+                        <div class="row title">Review & Excecute</div>
+                    </li>-->
+                </ul>
+                <div class="col-md-1" ></div>
+            </div>
+            <div class="col-md-12 horizontal-line" ></div>
+            <div class="col-md-12">
+                <div class="col-md-12 arrow-container">
+                    <div class="col-md-1 "><div class="arrow-left-disabled prev" data-ng-click="wizard.prev()"></div> </div>
+                    <div class="col-md-10">
+                        <div class="step-content row-fluid position-relative" id="step-container">
+                            <div class="step-pane active" id="step1">
+                                <div ng-include="'partials/selectDomain'"></div>
+                            </div>
+                            <div class="step-pane  " id="step2">
+                                <div ng-include="'partials/selectDataSet'"></div>
+                            </div>
+                            <div class="step-pane  " id="step3">
+                                <div ng-include="'partials/selectModel'"></div>
+                            </div>
+                            <div class="step-pane " id="step4">
+                                <div ng-include="'partials/initializeValues'"></div>
+                            </div>
+                            <div class="step-pane" id="step5" >
+                                <div ng-include="'partials/reviewAndExecute'"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-1"><div class="arrow-right-disabled next" data-ng-click="wizard.next()"></div> </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script type="text/javascript">
+    /*$(document).on('click', '.bool-slider .inset .control',function() {
+        if (!$(this).parent().parent().hasClass('disabled')) {
+            if ($(this).parent().parent().hasClass('true')) {
+                angular.element($(this).parent().parent()).scope().name
+                $(this).parent().parent().addClass('false').removeClass('true');
+                $(this).parent().find('.glyphicon').remove();
+                $(this).parent().append('<span class="glyphicon glyphicon-remove icon" ></span> ');
+            } else {
+                $(this).parent().parent().addClass('true ').removeClass('false');
+                $(this).parent().find('.glyphicon').remove();
+                $(this).parent().prepend('<span class="glyphicon glyphicon-ok icon"></span> ');
+            }
+        }
+    });*/
+</script>
+
+

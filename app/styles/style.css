@@ -1,0 +1,407 @@
+textarea:focus, input:focus{
+    outline: 0;
+}
+input[placeholder]{
+    font-style: italic;
+}
+.btn-execute{
+    background-color: #555;
+    color: #EEEEEE;
+}
+.alert-msg-info {
+    background-color: #EEEEEE;
+    border: 1px solid #DDDDDD;
+}
+.navbar {
+    border: 1px solid grey;
+    border-left: 0px;
+}
+.navbar-nav > li {
+    border: 0px solid #333;
+    border-left-width: 1px;
+}
+.itemnavs li{
+    text-align:center;
+    min-width: 100px;
+    font-size: 16px;
+}
+.itemnavs .itemnavsinside li{
+    text-align:left;
+    min-width: 100px;
+    font-size: 14px;
+}
+.itemnavs .itemnavsinside .active a{
+    border-bottom: 0px solid white;
+    text-align:left;
+    min-width: 100px;
+    font-size: 14px;
+}
+.navbar-collapse .navbar-sort-container .navbar-nav .active > a{
+    border-bottom: 2px solid #008cff;
+    padding-bottom: 13px;
+}
+.navbar-inverse .navbar-nav > li > a {
+    color: #999;
+    padding: 15px 15px 15px 15px;
+    font-size: 14px;
+}
+.navbar-inverse .navbar-nav > li > a:focus {
+    color: #999;
+    padding: 15px 15px 15px 15px;
+    font-size: 14px;
+}
+.navbar-brand {
+    float: left;
+    padding: 14px;
+    font-size: 18px;
+    line-height: 20px;
+}
+.navbar-brand > img {
+    width: 90%
+}
+.headerContainer{
+    width: 100%;
+    max-width:1350px;
+}
+a {
+    color: grey;
+    text-decoration: none;
+    font-family: 'Meiryo UI';
+    /*font-family: Gill Sans / Gill Sans MT, sans-serif;*/
+}
+a:hover{
+    color: grey;
+    cursor:pointer;
+}
+.moreOptions{
+    padding-right: 10px;
+}
+.maincontainer{
+    padding:10px; ;
+}
+footer {
+    text-align: center;
+    color: #ccc;
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:30px;   /* Height of the footer */
+    background:#4D4D4D;
+    padding-top: 5px;
+    display: none;
+}
+/* wizard */
+
+.wizard-steps {
+    list-style: none;
+    text-align: center;
+}
+.wizard-steps li{
+    float: left;
+    position: relative;
+    margin-left: -1%;
+    width: 20%;
+}
+
+.wizard-steps li .step{
+    width: 40%;
+    float: left;
+}
+.step-line{
+    height: 2px;
+    padding-top: 5px;
+    overflow: hidden;
+    /*margin-top: 6%;
+    margin-bottom: 20px;*/
+}
+.wizard-steps li .step-line-end{
+    background-color: #fff;
+}
+.wizard-steps li .step-line-middle{
+    background-color: #ccc;
+}
+.wizard-steps li.active .step-line-middle{
+    background-color: #0088cc;
+}
+.wizard-steps li .step-circle{
+    border: 5px solid rgb(206, 209, 214);
+    color: rgb(84, 100, 116);
+    font-size: 15px;
+    border-radius: 100%;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+
+}
+.wizard-steps li .title{
+    font-style: italic;
+    font-size: 12px;
+}
+.wizard-steps li.active .title{
+    font-style: normal;
+    font-weight: 700;
+}
+.wizard-steps li.active .step-circle{
+    border: 5px solid #0088cc;
+}
+.step-content-body-padding{
+    padding-left: 40px;padding-right: 90px;
+}
+.arrow-right-disabled {
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    float: left;
+    border-left: 20px solid #cccccc;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.arrow-left-disabled {
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-right:20px solid #cccccc;
+    cursor: pointer;
+}
+.arrow-right-enabled {
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid #0088cc;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.arrow-left-enabled {
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    float: right;
+    border-right:20px solid #0088cc;
+    cursor: pointer;
+}
+.vertical-spacer{
+    height: 10px;
+}
+.light-grey-border{
+    border: 1px #eee solid;
+}
+.default-padding{
+    padding: 4px;
+}
+
+.horizontal-line{
+    border-bottom: 1px #eee solid;
+    margin-bottom: 5px;
+    height: 5px;
+}
+.searchTxtBox{
+    border:1px #eee solid;border-radius: 20px;padding:7px;z-index: 99;
+    width: 100%;
+}
+.searchTxtBox:focus{
+    border:1px #0088cc solid;
+}
+/* class to be used with form elements*/
+.left-inner-addon {
+    position: relative;
+}
+.left-inner-addon input {
+    padding-left: 30px;
+}
+.left-inner-addon i {
+    position: absolute;
+    padding: 10px 12px;
+    pointer-events: none;
+}
+
+.right-inner-addon {
+    position: relative;
+}
+.right-inner-addon input {
+    padding-right: 30px;
+}
+.right-inner-addon span {
+    position: absolute;
+    right: 0px;
+    padding: 10px 25px;
+    pointer-events: none;
+}
+table{
+    width: 100%;
+}
+table.selected-data tr{
+    border: 1px solid #EEEEEE;
+}
+table.selected-data td{
+    padding: 10px;
+}
+
+table.selected-data ul{
+    list-style: none;
+    padding: 0px;
+}
+
+table.selected-data li{
+    padding: 5px;
+}
+table.selected-data input{
+    margin-top: 2px;
+}
+table.selectionTable{
+    padding: 1em;
+
+    border: 1px #eee solid;
+}
+table.selectionTable  thead{
+    background-color: #adadad;
+}
+table.selectionTable  thead tr th,table.selectionTable  tbody tr td{
+    padding: 10px;
+    border: 1px #999 solid;
+}
+table.selectionTable  thead tr{
+    border-bottom: 3px #666 solid;
+    font-size: 15px;
+}
+
+table.selectionTable  tbody tr{
+    background-color: #dddddd;
+    border-bottom: 1px #333333 solid;
+}
+table.selectionTable  tbody tr:hover{
+    background-color: #EEEEEE;
+    border: 1px #ffffff solid;
+}
+.firstColumn{
+    max-width: 10%;
+    width: 10%;
+}
+.first-column-selected-data{
+    max-width: 20%;
+    width: 20%;
+    background-color: #EEEEEE;
+}
+
+/*Bool slider */
+.bool-slider
+{
+    border: 1px solid #CCC;
+    color: #FFF;
+    font-size: 10px;
+    font-weight: 700;
+    font-family: Helvetica, Verdana, Arial, sans-serif;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+
+    height: 25px;
+    width: 55px;
+    border-radius: 25px;
+}
+
+.bool-slider.true .inset
+{
+    background-color: #51a351;
+    *background-color: #499249;
+    background-image: linear-gradient(top, #62c462, #51a351);
+    background-repeat: repeat-x;
+    border-color: #51a351 #51a351 #387038;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    background-image: none;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+.bool-slider.true .inset .control{float: left;}
+.bool-slider.true .inset .control:after
+{
+    content: '';
+    position: relative;
+    right: -135%;
+    top: 20%;
+}
+
+.bool-slider.false .inset
+{
+    background-color: #da4f49;
+    *background-color: #bd362f;
+    background-image: linear-gradient(top, #ee5f5b, #bd362f);
+    background-repeat: repeat-x;
+    border-color: #bd362f #bd362f #802420;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    background-image: none;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+.bool-slider .icon{
+    margin-left: 9px;margin-top: 5px;
+}
+
+.bool-slider.false .inset .control{float: right;}
+.bool-slider.false .inset .control:before
+{
+    content: '';
+    position: relative;
+    left: -100%;
+    top: 20%;
+}
+
+.bool-slider .inset
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+
+}
+
+.poemdelete{
+    font-size: 10px;
+    color: deepskyblue;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.bool-slider .inset .control
+{
+    background-color: #000;
+    width: 45%;
+    height: 98%;
+    border-radius: 25px;
+    background-color: #f5f5f5;
+    *background-color: #e6e6e6;
+    background-image: linear-gradient(top, #ffffff, #e6e6e6);
+    background-repeat: repeat-x;
+}
+
+.bool-slider .inset .control:hover
+{
+    cursor: pointer;
+}
+
+.bool-slider.disabled
+{
+    color: #CCC;
+}
+
+.bool-slider.disabled .inset
+{
+    background-color: #f5f5f5;
+    *background-color: #e6e6e6;
+    background-image: linear-gradient(top, #ffffff, #e6e6e6);
+    background-repeat: repeat-x;
+}
+
+.bool-slider.disabled .control
+{
+    cursor: default;
+}
+.unlike{
+    display:none;
+}

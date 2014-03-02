@@ -1,0 +1,45 @@
+<div ng-controller="PoemCtrl">
+       {{ notAvailable }}
+    <form ng-submit="addTodo()" class="add">
+        <input type="text" ng-model="todoText"  size="30"
+               placeholder="add new todo here">
+        <input class="btn-primary" type="submit" value="add">
+    </form>
+       <div class="allpost">
+            <span>{{todos.length}} remaining</span>
+            <ul class="unstyled">
+                <li ng-repeat="todo in todos">
+
+                    <span id="{{$index}}">{{todo.poem}}</span>
+                    <span class="poemdelete edittoggle1" ng-click="showEdit(todo.id)">Edit</span> |
+                    <span class="poemdelete" ng-click="deleteTodo(todo.id)">Delete</span> | <span class="poemdelete" ng-click="viewTodo(todo.id)">View</span>
+
+                </li>
+            </ul>
+       </div>
+            <form class="edit" ng-submit="updateTodo()">
+                <input type="text" ng-model="todoEditText" size="30" name="edittext">
+                <input type="hidden" id="hiddenid" value="" name="hiddenid">
+                <input class="poemdelete edittoggle2" value="edit" type="submit">
+            </form>
+
+            <form ng-submit="addComment()" class="comment">
+                <input type="text" ng-model="todoCommentText"  size="30"
+                       placeholder="add new Comment to Todo here">
+                <input class="btn-primary" type="submit" value="comment">
+            </form>
+
+
+            <div class="singlepost">
+            <div ng-repeat="todo in todos">
+                <div> See How it Looks:<span>{{todo.poem}}</span> {{ todoCommentText }} </div>
+                <div class="poemdelete" ng-click="showComment()">See Comment</div><div class="poemdelete" ng-click="doneTodo()">Done</div>
+                <span class="poemdelete like" ng-click="likeTodo()">Like</span> <span class="poemdelete unlike" ng-click="unlikeTodo()">Unlike</span>
+            </div>
+            <div ng-repeat="comment in comments">
+                <div>{{ comment.commenttext }}</div>
+            </div>
+            </div>
+
+    <div id="container" style="min-width: 310px; height: 300px; margin: 0 auto"></div>
+</div>

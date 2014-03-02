@@ -1,0 +1,123 @@
+<div class="row-fluid">
+    <div class="row-fluid vertical-spacer"></div>
+    <div class="row-fluid">
+        <div class="col-xs-12 step-content-body-padding">
+            <div class="col-xs-8 alert alert-msg-info">
+                Please select Model(s).
+            </div>
+
+            <div class="col-xs-4  pull-right">
+                <div class="right-inner-addon ">
+                    <span class="glyphicon glyphicon-search"></span>
+                    <input class="searchTxtBox" type="text" placeholder="enter to filter below data"/>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="row-fluid">
+        <div class="col-xs-12 step-content-body-padding">
+            <table class="selectionTable">
+                <thead>
+                <tr>
+                    <th class="firstColumn">Select</th>
+                    <th>Model Name</th>
+                    <th>Description</th>
+                    <th>Action</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr data-ng-repeat="model in jobStruct.modelList">
+                    <td class="firstColumn" >
+                        <div class="bool-slider {{model.selected}}" data-id="{{$index}}" data-ng-click="toggleSelected(this)">
+                            <div class="inset">
+                                <div class="control" ></div>
+                                <span class="glyphicon glyphicon-remove icon" ></span>
+                            </div>
+                        </div>
+                    </td>
+                    <td>{{model.name}}</td>
+                    <td>{{model.description}}</td>
+                    <td>
+                        <a href="#" class="glyphicon glyphicon-open" data-id="{{model.id}}"></a>
+                        <a href="#" class="glyphicon glyphicon-pencil" data-id="{{model.id}}"></a>
+                    </td>
+                </tr>
+                <!--<tr>
+                    <td class="firstColumn">
+                        <div class="bool-slider false">
+                            <div class="inset">
+                                <div class="control"></div>
+                                <span class="glyphicon glyphicon-remove icon" ></span>
+                            </div>
+                        </div>
+
+                    </td>
+                    <td>Data set 1</td>
+                    <td>Desc 1</td>
+                    <td>
+                        <a href="#" class="glyphicon glyphicon-open"></a>
+                        <a href="#" class="glyphicon glyphicon-pencil"></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="firstColumn">
+                        <div class="bool-slider false">
+                            <div class="inset">
+                                <div class="control"></div>
+                                <span class="glyphicon glyphicon-remove icon" ></span>
+                            </div>
+                        </div>
+
+                    </td>
+                    <td>Data set 1</td>
+                    <td>Desc 1</td>
+                    <td>
+                        <a href="#" class="glyphicon glyphicon-open"></a>
+                        <a href="#" class="glyphicon glyphicon-pencil"></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="firstColumn">
+                        <div class="bool-slider false">
+                            <div class="inset">
+                                <div class="control"></div>
+                                <span class="glyphicon glyphicon-remove icon" ></span>
+                            </div>
+                        </div>
+
+                    </td>
+                    <td>Data set 1</td>
+                    <td>Desc 1</td>
+                    <td>
+                        <a href="#" class="glyphicon glyphicon-open"></a>
+                        <a href="#" class="glyphicon glyphicon-pencil"></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="firstColumn">
+                        <div class="bool-slider false">
+                            <div class="inset">
+                                <div class="control"></div>
+                                <span class="glyphicon glyphicon-remove icon" ></span>
+                            </div>
+                        </div>
+
+                    </td>
+                    <td>Data set 1</td>
+                    <td>Desc 1</td>
+                    <td>
+                        <a href="#" class="glyphicon glyphicon-open"></a>
+                        <a href="#" class="glyphicon glyphicon-pencil"></a>
+                    </td>
+                </tr>-->
+
+
+
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+</div>

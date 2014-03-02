@@ -1,0 +1,15 @@
+<div ng-controller="DashBoardCtrl">
+    {{notAvailable}}
+    <div> Show All</div>
+    <div ng-repeat="todo in todos">
+        <div class="sticky">
+        <span>{{todo.id}}</span><span>{{todo.poem}}</span>
+        </div>
+    </div>
+    <div class="poemdelete" ng-click="showNews()"> Show Tech News </div>
+    <ul>
+    <li ng-repeat="item in items">
+        <span>{{ item.title }}</span>
+    </li>
+    </ul>
+</div>
